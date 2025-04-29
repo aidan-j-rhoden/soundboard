@@ -1,0 +1,308 @@
+[gd_scene load_steps=36 format=3 uid="uid://cpvi36m16bmam"]
+
+[ext_resource type="Script" uid="uid://crggjvr6xtuw1" path="res://board.gd" id="1_7jexb"]
+[ext_resource type="PackedScene" uid="uid://cpljt6pf8qwmh" path="res://button.tscn" id="1_mykef"]
+[ext_resource type="AudioStream" uid="uid://cpkhr3kt178s4" path="res://sfx/bruh.mp3" id="2_omlhx"]
+[ext_resource type="AudioStream" uid="uid://dilajn56a8g1q" path="res://sfx/Bunny death The Last of Us (negaoryx).mp3" id="4_3tcrt"]
+[ext_resource type="AudioStream" uid="uid://b2rd74rn6mlfd" path="res://sfx/emotional-damage-meme.mp3" id="5_jk2g6"]
+[ext_resource type="AudioStream" uid="uid://cb6fj7bqcgpvj" path="res://sfx/failure-steven.mp3" id="6_s8nvr"]
+[ext_resource type="AudioStream" uid="uid://bhq0qtmdrjji4" path="res://sfx/inhuman-reactions_1.mp3" id="7_1w7oh"]
+[ext_resource type="AudioStream" uid="uid://bwy3dj11dfyy" path="res://sfx/Metal Gear Solid： Alert (!).mp3" id="8_3ughp"]
+[ext_resource type="AudioStream" uid="uid://dygoglpkc3xyu" path="res://sfx/Joke Sound Effect.mp3" id="9_rt2hn"]
+[ext_resource type="AudioStream" uid="uid://cxtch6pt2xrw8" path="res://sfx/downer_noise.mp3" id="10_qi32y"]
+[ext_resource type="AudioStream" uid="uid://fb2el42vgppr" path="res://sfx/record-scratch-2_WF2Sj1c.mp3" id="11_yj65w"]
+[ext_resource type="AudioStream" uid="uid://druahweeofe8t" path="res://sfx/perfect-fart.mp3" id="12_6v0wa"]
+[ext_resource type="AudioStream" uid="uid://bnkspqyk1xrp1" path="res://sfx/gta-wasted.mp3" id="13_4pumg"]
+[ext_resource type="AudioStream" uid="uid://boee0co80ckgs" path="res://sfx/dark-souls-death.mp3" id="14_qi4uq"]
+[ext_resource type="AudioStream" uid="uid://ct2a24xy763vp" path="res://sfx/morning_E9pKQRY.mp3" id="15_igrjl"]
+[ext_resource type="AudioStream" uid="uid://dogtkvd5joo68" path="res://sfx/roblox-death-sound_ytkBL7X.mp3" id="16_a0dcw"]
+[ext_resource type="AudioStream" uid="uid://b7k5mcusv4lra" path="res://sfx/finish-him-sound-effect.mp3" id="16_i3057"]
+[ext_resource type="AudioStream" uid="uid://8hrcjrta2w4a" path="res://sfx/announcer_kill_double_01.mp3" id="18_7lx8e"]
+[ext_resource type="AudioStream" uid="uid://blhuwb2kbhc65" path="res://sfx/announcer_kill_triple_01.mp3" id="19_3qakm"]
+[ext_resource type="AudioStream" uid="uid://kpjx6m8t288d" path="res://sfx/pacman_death.mp3" id="20_afs6e"]
+[ext_resource type="AudioStream" uid="uid://dnrixyfixc067" path="res://sfx/super-mario-death-sound-sound-effect.mp3" id="21_6hcr4"]
+[ext_resource type="AudioStream" uid="uid://il8o2ng8e1yl" path="res://sfx/anime-wow-sound-effect.mp3" id="22_5ni2e"]
+[ext_resource type="AudioStream" uid="uid://br30ga75ifpwa" path="res://sfx/vine-boom.mp3" id="23_p43wi"]
+[ext_resource type="AudioStream" uid="uid://cq3x64lfv6btl" path="res://sfx/a-few-moments-later-sponge-bob-sfx-fun.mp3" id="24_fwqva"]
+[ext_resource type="AudioStream" uid="uid://damty13gfuolh" path="res://sfx/yeet_ivPgINo.mp3" id="25_bn6or"]
+[ext_resource type="AudioStream" uid="uid://kru4usbmorsh" path="res://sfx/why-are-you-gay.mp3" id="26_30ub7"]
+[ext_resource type="AudioStream" uid="uid://gex4234nxxm0" path="res://sfx/gay-echo.mp3" id="27_b5qdt"]
+[ext_resource type="AudioStream" uid="uid://crfnarvim8swd" path="res://sfx/wilhelmscream.mp3" id="28_fexn6"]
+[ext_resource type="AudioStream" uid="uid://bgsqtlsxh22dc" path="res://sfx/headshot-02.mp3" id="29_sn5g1"]
+[ext_resource type="AudioStream" uid="uid://dpeeuwdp70as0" path="res://sfx/mamamia-marcelo.mp3" id="30_apee4"]
+[ext_resource type="AudioStream" uid="uid://7672soiamp3l" path="res://sfx/uhhhhhhhhhhh-tecno.mp3" id="31_d2oob"]
+[ext_resource type="AudioStream" uid="uid://reg1terb40cn" path="res://sfx/killsound-your-mother.mp3" id="32_eq1pg"]
+[ext_resource type="AudioStream" uid="uid://bidp656d8mpdy" path="res://sfx/dramatic-boomer.mp3" id="33_ccaoj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ccaoj"]
+content_margin_top = 6.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l17f6"]
+content_margin_left = 10.0
+content_margin_top = 1.0
+content_margin_right = 10.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[node name="Board" type="CanvasLayer"]
+script = ExtResource("1_7jexb")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.319125, 0.1665, 0.37, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_ccaoj")
+text = "Soundboard 😈"
+horizontal_alignment = 1
+
+[node name="QuitMargin" type="MarginContainer" parent="VBoxContainer/Label"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -86.0
+offset_top = -29.5
+offset_bottom = 29.5
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_horizontal = 8
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+
+[node name="Button" type="Button" parent="VBoxContainer/Label/QuitMargin"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_l17f6")
+text = "Quit"
+
+[node name="VolumeMargin" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 20
+
+[node name="Volume" type="HSlider" parent="VBoxContainer/VolumeMargin"]
+layout_mode = 2
+max_value = 4.0
+step = 0.01
+value = 1.0
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Effects" type="HFlowContainer" parent="VBoxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/h_separation = 15
+theme_override_constants/v_separation = 15
+
+[node name="Button" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Bruh"
+clip = ExtResource("2_omlhx")
+volume_level = 2.0
+
+[node name="Button2" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "negaoryx"
+clip = ExtResource("4_3tcrt")
+
+[node name="Button3" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Emotional Damage"
+clip = ExtResource("5_jk2g6")
+volume_level = 4.0
+
+[node name="Button4" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Failure"
+clip = ExtResource("6_s8nvr")
+volume_level = 8.0
+
+[node name="Button5" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "IR"
+clip = ExtResource("7_1w7oh")
+volume_level = 4.0
+
+[node name="Button6" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Alert"
+clip = ExtResource("8_3ughp")
+volume_level = 5.0
+
+[node name="Button7" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Dad Joke"
+clip = ExtResource("9_rt2hn")
+volume_level = 5.0
+
+[node name="Button8" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Womp womp"
+clip = ExtResource("10_qi32y")
+volume_level = 3.0
+
+[node name="Button9" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Scratch"
+clip = ExtResource("11_yj65w")
+volume_level = 3.0
+
+[node name="Button10" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Fart"
+clip = ExtResource("12_6v0wa")
+volume_level = 1.0
+
+[node name="Button11" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "GTA Wasted"
+clip = ExtResource("13_4pumg")
+volume_level = 5.0
+
+[node name="Button12" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "DkS Died"
+clip = ExtResource("14_qi4uq")
+volume_level = 7.0
+
+[node name="Button13" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Balin"
+clip = ExtResource("15_igrjl")
+volume_level = 11.0
+
+[node name="Button15" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Roblox"
+clip = ExtResource("16_a0dcw")
+volume_level = 7.0
+
+[node name="Button14" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Finisher"
+clip = ExtResource("16_i3057")
+volume_level = 5.0
+
+[node name="Button16" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Double"
+clip = ExtResource("18_7lx8e")
+
+[node name="Button17" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Triple"
+clip = ExtResource("19_3qakm")
+volume_level = -4.0
+
+[node name="Button27" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "HS"
+clip = ExtResource("29_sn5g1")
+volume_level = -2.0
+
+[node name="Button18" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "PacMan"
+clip = ExtResource("20_afs6e")
+volume_level = -5.0
+
+[node name="Button19" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Mario"
+clip = ExtResource("21_6hcr4")
+
+[node name="Button20" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Woww"
+clip = ExtResource("22_5ni2e")
+
+[node name="Button21" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Vine Boom"
+clip = ExtResource("23_p43wi")
+volume_level = 2.0
+
+[node name="Button22" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Moments"
+clip = ExtResource("24_fwqva")
+volume_level = 6.0
+
+[node name="Button23" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Yeet"
+clip = ExtResource("25_bn6or")
+volume_level = 5.0
+
+[node name="Button24" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Why gey?"
+clip = ExtResource("26_30ub7")
+volume_level = 15.0
+
+[node name="Button25" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Gay"
+clip = ExtResource("27_b5qdt")
+volume_level = 1.0
+
+[node name="Button26" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "The Wilhelm scream"
+clip = ExtResource("28_fexn6")
+volume_level = 6.0
+
+[node name="Button28" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Mama Mia"
+clip = ExtResource("30_apee4")
+volume_level = 2.0
+
+[node name="Button29" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Uhhhh"
+clip = ExtResource("31_d2oob")
+volume_level = 10.0
+
+[node name="Button30" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Your Mother"
+clip = ExtResource("32_eq1pg")
+volume_level = 5.0
+
+[node name="Button31" parent="VBoxContainer/MarginContainer/Effects" instance=ExtResource("1_mykef")]
+layout_mode = 2
+title = "Boomer"
+clip = ExtResource("33_ccaoj")
+volume_level = 1.5
+
+[connection signal="pressed" from="VBoxContainer/Label/QuitMargin/Button" to="." method="_on_button_pressed"]
+[connection signal="value_changed" from="VBoxContainer/VolumeMargin/Volume" to="." method="_on_volume_value_changed"]

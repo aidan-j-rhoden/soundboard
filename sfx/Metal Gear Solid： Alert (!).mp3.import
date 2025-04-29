@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bwy3dj11dfyy"
+path="res://.godot/imported/Metal Gear Solid： Alert (!).mp3-5adfc415e75714c098934b09d08efac6.mp3str"
+
+[deps]
+
+source_file="res://sfx/Metal Gear Solid： Alert (!).mp3"
+dest_files=["res://.godot/imported/Metal Gear Solid： Alert (!).mp3-5adfc415e75714c098934b09d08efac6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dilajn56a8g1q"
+path="res://.godot/imported/Bunny death The Last of Us (negaoryx).mp3-6cf84d010ba1f2f50dc1708215d75532.mp3str"
+
+[deps]
+
+source_file="res://sfx/Bunny death The Last of Us (negaoryx).mp3"
+dest_files=["res://.godot/imported/Bunny death The Last of Us (negaoryx).mp3-6cf84d010ba1f2f50dc1708215d75532.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

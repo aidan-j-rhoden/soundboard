@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://cpljt6pf8qwmh"]
+
+[ext_resource type="Script" uid="uid://crm8fpel7fdis" path="res://button.gd" id="1_hyya8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o3kbk"]
+bg_color = Color(0.72, 0.696, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a631p"]
+bg_color = Color(0.84, 0.462, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1b1sp"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[node name="Button" type="Button"]
+focus_mode = 0
+theme_override_colors/font_hover_color = Color(0.237539, 0.237539, 0.237539, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 45
+theme_override_styles/hover = SubResource("StyleBoxFlat_o3kbk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a631p")
+theme_override_styles/normal = SubResource("StyleBoxFlat_1b1sp")
+text = " test 01 "
+script = ExtResource("1_hyya8")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

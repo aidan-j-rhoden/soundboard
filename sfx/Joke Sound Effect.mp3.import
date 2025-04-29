@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dygoglpkc3xyu"
+path="res://.godot/imported/Joke Sound Effect.mp3-112b45f4e5495a3ca26be903ef0fccec.mp3str"
+
+[deps]
+
+source_file="res://sfx/Joke Sound Effect.mp3"
+dest_files=["res://.godot/imported/Joke Sound Effect.mp3-112b45f4e5495a3ca26be903ef0fccec.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
